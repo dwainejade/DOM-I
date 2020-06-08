@@ -39,4 +39,64 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// links
+const links = document.querySelectorAll('a');
+links[0].textContent = siteContent['nav']['nav-item-1'];
+links[1].textContent = siteContent['nav']['nav-item-2'];
+links[2].textContent = siteContent['nav']['nav-item-3'];
+links[3].textContent = siteContent['nav']['nav-item-4'];
+links[4].textContent = siteContent['nav']['nav-item-5'];
+links[5].textContent = siteContent['nav']['nav-item-6'];
+
+
+links.forEach( element => {
+  element.style.color = 'green';
+});
+
+// head
+const head = document.querySelector('h1');
+head.textContent = siteContent['cta']['h1'];
+
+const headPic = document.querySelector('#cta-img');
+headPic.src = 'img/header-img.png';
+
+const button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+
+// Top section
+const h4 = document.querySelectorAll('h4');
+const p = document.querySelectorAll('p');
+
+h4[0].textContent = siteContent['main-content']['features-h4'];
+p[0].textContent = siteContent['main-content']['features-content'];
+
+h4[1].textContent = siteContent['main-content']['about-h4'];
+p[1].textContent = siteContent['main-content']['about-content'];
+
+
+// middle image
+const middleImage = document.querySelector('#middle-img');
+middleImage.src = 'img/mid-page-accent.jpg';
+
+// bottom section
+h4[2].textContent = siteContent['main-content']['services-h4']
+p[2].textContent = siteContent['main-content']['services-content']
+
+h4[3].textContent = siteContent['main-content']['product-h4']
+p[3].textContent = siteContent['main-content']['product-content']
+
+h4[4].textContent = siteContent['main-content']['vision-h4']
+p[4].textContent = siteContent['main-content']['vision-content']
+
+// contact
+h4[5].textContent = siteContent['contact']['contact-h4']
+p[5].textContent = siteContent['contact']['address']
+p[6].textContent = siteContent['contact']['phone']
+p[7].textContent = siteContent['contact']['email']
+
+// footer
+p[8].textContent = siteContent['footer']['copyright']
+
